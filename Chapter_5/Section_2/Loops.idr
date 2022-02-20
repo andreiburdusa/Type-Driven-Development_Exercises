@@ -1,7 +1,7 @@
-module Main
+module Chapter_5.Section_2.Loops
 
 import System
-import ReadNum
+import Chapter_5.Section_2.ReadNum
 
 countdown : (secs : Nat) -> IO ()
 countdown Z = putStrLn "Lift off!"

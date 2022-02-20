@@ -1,4 +1,4 @@
-module Shape
+module Chapter_4.Shape
 
 ||| Represents shapes
 public export

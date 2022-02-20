@@ -1,7 +1,7 @@
-module Tree
+module Chapter_4.Tree
 
-import Picture
-import Shape
+import Chapter_4.Picture
+import Chapter_4.Shape
 
 data Tree elem = Empty | Node (Tree elem) elem (Tree elem)
 

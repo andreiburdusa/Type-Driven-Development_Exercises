@@ -1,6 +1,6 @@
-module Picture
+module Chapter_4.Picture
 
-import Shape
+import Chapter_4.Shape
 
 public export
 data Picture = Primitive Shape

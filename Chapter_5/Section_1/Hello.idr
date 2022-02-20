@@ -1,4 +1,5 @@
 module Main
+
 main : IO ()
 main = do
   putStr "Enter your name: "

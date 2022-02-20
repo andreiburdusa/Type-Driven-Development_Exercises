@@ -1,4 +1,4 @@
-import Tree
+import Chapter_4.Tree
 
 data BSTree : Type -> Type where
   Empty : Ord elem => BSTree elem
