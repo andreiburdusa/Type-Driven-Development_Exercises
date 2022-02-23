@@ -1,3 +1,9 @@
+
+module Chapter_4.SumInputs
+
+import System.REPL
+
+export
 sumInputs : Integer -> String -> Maybe (String, Integer)
 sumInputs tot inp =
   let val = cast inp

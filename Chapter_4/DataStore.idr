@@ -1,6 +1,8 @@
 module Main
 
 import Data.Vect
+import System.REPL
+import Data.String
 
 data DataStore : Type where
   MkData : (size : Nat) -> (items : Vect size String) -> DataStore
@@ -54,7 +56,7 @@ indices (S n) = (n) :: indices n
 
 searched : (store : DataStore) -> (substring : String) -> String
 searched (MkData size items) substring =
-  let indexed = Data.Vect.zip (reverse $ indices size) items
+  let indexed = zip (reverse $ indices size) items
       (p ** found) = Data.Vect.filter ((substring `isInfixOf`) . snd) indexed
   in
     concat . map (++ "\n") . map (\(index, name) => show index ++ ": " ++ name) $
