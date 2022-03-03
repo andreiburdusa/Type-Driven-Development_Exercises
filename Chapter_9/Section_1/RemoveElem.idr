@@ -2,8 +2,8 @@ module Chapter_9.Section_1.RemoveElem
 
 import Data.Vect.Elem
 import Data.Vect
--- import Decidable.Equality
 
+export
 removeElem :
     {n:_} ->
     (value : a) ->
@@ -16,6 +16,7 @@ removeElem {n = 0} value (y :: []) (There later) = absurd later
 -- removeElem {n = 0} value (y :: []) (There later) = []
 removeElem {n = S k} value (y :: xs) (There later) = y :: removeElem value xs later
 
+export
 removeElem_auto :
     {n:_} ->
     (value : a) ->
