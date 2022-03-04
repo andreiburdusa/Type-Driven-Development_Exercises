@@ -1,4 +1,4 @@
-module Main
+module Chapter_5.Section_1.Hello
 
 main : IO ()
 main = do
@@ -16,8 +16,8 @@ printLonger = do
   firstString <- getLine
   putStr "Second string: "
   secondString <- getLine
-  let length1 = Prelude.Types.String.length firstString
-  let length2 = Prelude.Types.String.length secondString
+  let length1 = length firstString
+  let length2 = length secondString
   putStrLn $ show (max length1 length2)
 
 printLonger' : IO ()
@@ -26,6 +26,6 @@ printLonger' = do
     getLine >>= \firstString =>
     putStr "Second string: " >>= \_ =>
     getLine >>= \secondString =>
-      let length1 = Prelude.Types.String.length firstString
-          length2 = Prelude.Types.String.length secondString in
+      let length1 = length firstString
+          length2 = length secondString in
       putStrLn $ show (max length1 length2)
