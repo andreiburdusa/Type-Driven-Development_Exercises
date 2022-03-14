@@ -6,6 +6,12 @@ import System
 
 %default total
 
+{-
+"In order to support do notation for custom types (like RunIO), you need to
+implement (>>=) for binding values in a do block and (>>) for sequencing
+computations without binding values. See tests for complete implementations."
+https://github.com/idris-lang/Idris2/blob/main/tests/typedd-book/chapter11/ArithTotal.idr
+-}
 public export
 data InfIO : Type where
     Do : IO a -> (a -> Inf InfIO) -> InfIO
