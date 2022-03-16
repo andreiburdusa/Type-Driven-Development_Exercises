@@ -101,7 +101,6 @@ main = do
 
 -- Exercise 3
 mutual
-	partial
 	copy : (source : String) -> (destination : String) -> ConsoleIO ()
 	copy source destination = do
 		Right content <- ReadFile source
@@ -111,7 +110,6 @@ mutual
 		_ <- WriteFile destination content
 		shell
 
-	partial
 	cat : String -> ConsoleIO ()
 	cat source = do
 		Right content <- ReadFile source
@@ -121,7 +119,6 @@ mutual
 		_ <- PutStr content
 		shell
 
-	partial
 	shell : ConsoleIO ()
 	shell = do
 		PutStr "$> " 
