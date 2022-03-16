@@ -99,7 +99,7 @@ main = do
     | Nothing => putStrLn "Ran out of fuel"
     putStrLn ("Final score: " ++ show score)
 
--- Exercise 2
+-- Exercise 3
 mutual
 	partial
 	copy : (source : String) -> (destination : String) -> ConsoleIO ()
