@@ -1,4 +1,4 @@
-# Type-Driven-Development_Exercises
+# Type Driven Development - Exercises
 
 To run Idris2 inside the project:
 ```
