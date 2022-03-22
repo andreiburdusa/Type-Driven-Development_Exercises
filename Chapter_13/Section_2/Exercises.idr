@@ -104,7 +104,8 @@ strToInput x =
     else
         Nothing
 
-doBinaryOp : (Integer -> Integer -> Integer) -> StackCmd () (S (S height)) (S height)
+doBinaryOp :
+    (Integer -> Integer -> Integer) -> StackCmd () (S (S height)) (S height)
 doBinaryOp op = do
     val1 <- Pop
     val2 <- Pop
@@ -127,7 +128,8 @@ doDuplicate = do
     Pure top
 
 mutual
-    tryBinaryOp : (Integer -> Integer -> Integer) -> {height:_} -> StackIO height
+    tryBinaryOp :
+        (Integer -> Integer -> Integer) -> {height:_} -> StackIO height
     tryBinaryOp {height = (S (S h))} op = do
         doBinaryOp op
         result <- Top
