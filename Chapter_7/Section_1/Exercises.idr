@@ -3,12 +3,14 @@ module Chapter_7.Section_1.Exercises
 import Chapter_4.Shape
 import Data.List
 
+-- Exercise 1
 Eq Shape where
     Triangle d1 d2 == Triangle d1' d2' = d1 == d1' && d2 == d2'
     Rectangle d1 d2 == Rectangle d1' d2' = d1 == d1' && d2 == d2'
     Circle d == Circle d' = d == d'
     _ == _ = False
 
+-- Exercise 2
 Ord Shape where
     compare s1 s2 = compare (area s1) (area s2)
 
