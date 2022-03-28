@@ -4,6 +4,7 @@ import System.File
 import Data.String
 import Data.Vect
 
+-- Exercise 1
 readToBlank : IO (List String)
 readToBlank = do
     str <- getLine
@@ -13,6 +14,7 @@ readToBlank = do
             strs <- readToBlank
             pure $ str :: strs
 
+-- Exercise 2
 readAndSave : IO ()
 readAndSave = do
     putStrLn "Enter input (empty line to end):"
@@ -23,6 +25,7 @@ readAndSave = do
         | Left err => printLn err
     pure ()
 
+-- Exercise 3
 readVectFile : (filename : String) -> IO (n ** Vect n String)
 readVectFile filename = do
     Right file <- openFile filename Read
