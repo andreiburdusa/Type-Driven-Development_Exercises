@@ -13,7 +13,7 @@ package TypeDrivenDevelopment
 depends = contrib
 
 -- modules to install
-modules = Draft, Exercises, Hello, VecSort, WordLength
+modules = Hello
 
 -- main file (i.e. file to load at REPL)
 -- main =
