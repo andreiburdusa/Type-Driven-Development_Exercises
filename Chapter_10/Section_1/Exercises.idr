@@ -3,7 +3,7 @@ module Chapter_10.Section_1.Exercises
 import Data.List
 import Data.Nat
 
--- Exercis 1
+-- Exercise 1
 data TakeN : List a -> Type where
     Fewer : TakeN xs
     Exact : (n_xs : List a) -> {rest : _} -> TakeN (n_xs ++ rest)
