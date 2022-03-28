@@ -1,5 +1,5 @@
 
-module Chapter_4.SumInputs
+module Chapter_4.Section_3.SumInputs
 
 import System.REPL
 
