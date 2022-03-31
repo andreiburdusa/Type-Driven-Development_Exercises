@@ -1,7 +1,5 @@
 # Type-Driven Development - Exercises
 
-## My solutions for the exerises from the book _Type-Driven Development with Idris_
-
 To run Idris2 inside the project:
 ```
 $ rlwrap idris2 --find-ipkg
