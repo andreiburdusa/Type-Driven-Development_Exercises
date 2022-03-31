@@ -1,4 +1,4 @@
-# Type Driven Development - Exercises
+# Type-Driven Development - Exercises
 
 ## My solutions for the exerises in the book _Type-Driven Development with Idris_
 
