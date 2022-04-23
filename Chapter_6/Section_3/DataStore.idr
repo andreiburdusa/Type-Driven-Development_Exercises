@@ -3,6 +3,7 @@ module Chapter_6.Section_3.DataStore
 import Data.Vect
 import System.REPL
 import Data.String
+import Data.List
 
 infixr 5 .+.
 
